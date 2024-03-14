@@ -1,0 +1,19 @@
+{
+    "blogs": [
+        {
+            "id": "6",
+            "date": "4-2-2024 21:8",
+            "author": "njn",
+            "title": "jkk",
+            "body": "nnjjk"
+        },
+        {
+            "id": "7",
+            "date": "4-2-2024 21:18",
+            "author": "njnn",
+            "title": "njunj",
+            "body": "bjb j"
+        }
+    ],
+    "lastInsertedId": 8
+}

@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../styles/styles.css")
+        link(rel="stylesheet", href="../styles/navbar.css")
+        title= pageTitle
+    body 
+        .container
+            include navbar.pug
+            p.success-msg 
+            p.error-msg 
+            .blog 
+                .header.margin-bottom-3rem
+                    div.flex.space-between
+                        .author.margin-right-1rem #{blog.author},
+                        .date #{blog.date}
+                h2.title.margin-bottom-3rem #{blog.title}
+                p.body.margin-bottom-3rem.max-3-lines.
+                    #{blog.body}
+                div.container-btn
+                    button.backButton.btn-secondary(type='button')
+                        a(href="/blog") Back
+        
+
+        script(src="../javascripts/blogView.js")
+            

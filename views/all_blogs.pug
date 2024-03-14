@@ -1,0 +1,36 @@
+mixin blog(data)
+    .blog 
+        .header.margin-bottom-3rem
+            div.flex.space-between
+                .author.margin-right-1rem #{data.author},
+                .date #{data.date}
+
+            
+        h2.title.margin-bottom-3rem #{data.title}
+        //- p.body.margin-bottom-3rem.max-3-lines
+        //-     #{data.body}
+        div.container-btn
+            button.editBtn.btn-secondary(type='button')
+                a(href=`/blog/${data.id}/edit`) Edit
+            button.readBtn.btn-primary(type='button')
+                a(href=`/blog/${data.id}`) View
+            button.deleteBtn.btn-danger(type='button')
+                a(href=`/blog/${data.id}/delete`) Delete
+    hr.blog-endline.margin-bottom-5rem.margin-top-1rem
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="styles/styles.css")
+        link(rel="stylesheet", href="styles/navbar.css")
+        title= pageTitle
+    body 
+        .container
+            include navbar.pug 
+            for b in blogs   
+                +blog(b)
+                
+                

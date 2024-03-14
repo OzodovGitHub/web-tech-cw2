@@ -1,0 +1,59 @@
+.submit-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blog-input {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.5rem;
+}
+
+.submit-form input[type="text"],
+.submit-form textarea,
+.submit-form select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #370249;
+	border-radius:13px;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.submit-form input[type="text"]:focus,
+.submit-form textarea:focus,
+.submit-form select:focus
+{
+	box-shadow: 0 0 5px violet;
+	padding: 2%;
+	border: 1px solid violet;
+	border-radius:13px;
+}
+
+.submit-form input[type="submit"],
+.submit-form input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 30%;
+	padding: 2%;
+    background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);	
+    border-radius: 99em;
+	color: #fff;
+}
+.submit-form input[type="submit"]:hover,
+.submit-form input[type="button"]:hover{
+	background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+}
+

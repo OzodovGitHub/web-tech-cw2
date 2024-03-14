@@ -1,0 +1,64 @@
+.submit-form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.blog-input {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 0.5rem;
+}
+
+.submit-form input[type="text"],
+.submit-form textarea,
+.submit-form select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 2%;
+	border-radius:10px;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.submit-form input[type="text"]:focus,
+.submit-form textarea:focus,
+.submit-form select:focus
+{
+	box-shadow: 0 0 5px violet;
+	padding: 3%;
+	border: 1px solid violet;
+}
+
+.submit-form input[type="submit"],
+.submit-form input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 30%;
+	padding: 3%;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+    border-radius: 99em;
+	color: #fff;
+}
+
+
+.discard-btn {
+    background: #b20707;
+}
+
+.create-blog {
+    background: #007bff;
+}

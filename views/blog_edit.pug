@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../../styles/styles.css")
+        link(rel="stylesheet", href="../../styles/navbar.css")
+        link(rel="stylesheet", href="../../styles/blog_edit.css")
+        title= pageTitle
+    body 
+        .container
+            include navbar.pug 
+            p.success-msg 
+            p.error-msg
+            form(id="edit-blog-form" method="POST").submit-form
+                input(class="blog-input" name="author" type="text" placeholder="Full Name")
+                input(class="blog-input" name="title" type="text" placeholder="Title")
+                textarea(class="blog-input" name="body" rows="10" cols="65" placeholder="Your feedback here")
+
+                .flex.flex-end
+                    input(type="button" value="Discard").discard-btn.margin-right-1rem
+                    input(type="submit" value="Save").create-blog
+
+        script(src="../javascripts/blogEdit.js")
+        
