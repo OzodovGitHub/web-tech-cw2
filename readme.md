@@ -19,5 +19,5 @@ A basic application for surveying users about products or job postings and readi
     "dotenv": "^16.0.3"
 }
 `
-## [Source Code]
-## [Hosted App]
+## [Source Code]https://github.com/OzodovGitHub/web-tech-cw2.git
+## [Hosted App]https://web-tech-cw2.onrender.com/
